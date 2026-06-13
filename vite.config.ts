@@ -35,8 +35,8 @@ export default defineConfig({
   assetsInclude: ['**/*.svg', '**/*.csv'],
 
   build: {
-    minify: 'terser',
-    terserOptions: {
+  minify: 'esbuild',
+  terserOptions: {
       compress: {
         drop_console: true,
         drop_debugger: true,
